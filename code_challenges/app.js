@@ -64,9 +64,16 @@
 //
 // console.log(Persistence("39"));
 
+//should get:
 //Persistence(39) === 3
 
+///////////////////////////
+// resource I used:
+ // https://coderbyte.com/algorithm/map-reduce-filter-javascript-functional-programming
+///////////////////////////
+
+
 //////////////////////////////////////////
-//from ... 
+//from ...
 //day 5
 //////////////////////////////////////////
