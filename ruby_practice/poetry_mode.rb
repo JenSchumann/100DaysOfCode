@@ -206,18 +206,154 @@
 
 ##
 
-kids = ["Joe", "Sally", "Tom", "Mary", "Doug"].sort
+#kids = ["Joe", "Sally", "Tom", "Mary", "Doug"].sort
 
 # p kids
 # => ["Doug", "Joe", "Mary", "Sally", "Tom"]
 
-girl_kids = [kids[2] + ", " + kids[3]]
-p girl_kids.reverse
-boy_kids = [kids[0] + ", " + kids[1] + ", " + kids[4]]
+#girl_kids = [kids[2] + ", " + kids[3]]
+# p girl_kids
+# boy_kids = [kids[0] + ", " + kids[1] + ", " + kids[4]]
 # p boy_kids
-group = []
+# group = []
+#
+# group << girl_kids
+# p group.reverse
+# group << boy_kids
+# p group.reverse
+#
+# girl_kids << "Tiffany"
+# p girl_kids.reverse
+# p group
 
-group << girl_kids
-p group.reverse
-group << boy_kids
-p group.reverse
+############################
+#possible factorial
+############################
+# class Integer
+#   def factorial_recursive
+#     self <= 1 ? 1 : self * (self - 1).factorial
+#   end
+#   def factorial_iterative
+#     f = 1; for i in 1..self; f *= i; end; f
+#   end
+#   alias :factorial :factorial_iterative
+# end
+
+# def my_rand(1..9)
+# Random.new.rand(a..b)
+
+# @numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# p @numbers.sample
+#
+# p "============="
+
+
+# def factorial(numbers)
+
+
+
+#   @numbers = numbers.to_i
+#   numbers_range = (@numbers.sample).downto(1).to_a
+#   factorial = numbers_range.inject(:*)
+#   puts "The factorial of #{numbers} is #{factorial}"
+# end
+#
+# factorial(@numbers)
+# p "============="
+
+# p "factorial of 1:"
+# factorial(1)
+# p "============="
+# p "factorial of 2:"
+# factorial(2)
+# p "============="
+# p "factorial of 3:"
+# factorial(3)
+# p "============="
+# p "factorial of 4:"
+# factorial(4)
+# p "============="
+# p "factorial of 5:"
+# factorial(5)
+# p "============="
+# p "factorial of 6:"
+# factorial(6)
+# p "============="
+# p "factorial of 7:"
+# factorial(7)
+# p "============="
+# p "factorial of 8:"
+# factorial(8)
+# p "============="
+# p "factorial of 9:"
+# factorial(9)
+# p "============="
+
+
+# "factorial of 1:"
+# The factorial of 1 is 1
+# "============="
+# "factorial of 2:"
+# The factorial of 2 is 2
+# "============="
+# "factorial of 3:"
+# The factorial of 3 is 6
+# "============="
+# "factorial of 4:"
+# The factorial of 4 is 24
+# "============="
+# "factorial of 5:"
+# The factorial of 5 is 120
+# "============="
+# "factorial of 6:"
+# The factorial of 6 is 720
+# "============="
+# "factorial of 7:"
+# The factorial of 7 is 5040
+# "============="
+# "factorial of 8:"
+# The factorial of 8 is 40320
+# "============="
+# "factorial of 9:"
+# The factorial of 9 is 362880
+# "============="
+# @n = (1..9).to_a
+# p @n.sample
+p "============="
+p "============="
+
+
+# def factorial(n)
+#   if n = (1..9).to_a { |num| num }
+#   (1..n).sample.inject(:*) || 1
+#   return n
+# end
+# end
+
+# number = 44
+#
+# def get_root num
+#   Math.sqrt num
+# end
+#
+# def get_exp_five num
+#   num ** 5
+# end
+#
+# p get_root number
+# p get_exp_five number
+
+p "============="
+p "============="
+
+
+@postFactorial = (1..9).to_a.sample
+# p @postFactorial
+
+
+def get_rand_factorial n
+  (1..n).inject(:*) || 1
+
+end
+
+p get_rand_factorial @postFactorial

@@ -77,3 +77,105 @@
 //from ...
 //day 5
 //////////////////////////////////////////
+
+// @postFactorial = (1..9).to_a.sample
+// # p @postFactorial
+//
+//
+// def get_rand_factorial n
+//   (1..n).inject(:*) || 1
+//
+// end
+//
+// p get_rand_factorial @postFactorial
+
+// rewrite the ruby function above in JavaScript
+
+// console.log('gonna turn ruby into js');
+
+
+
+// const get_rand_factorial = {
+//   postFactorial: [1,2,3,4,5,6,7,8,9]
+//
+// for(let i = 0; i < get_rand_factorial.postFactorial; i++){
+// //returns the array
+// // console.log(get_rand_factorial.postFactorial[i]);
+// console.log(get_rand_factorial.postFactorial[i].random);
+// }
+// console.log(get_rand_factorial.postFactorial);
+
+console.log("=======================");
+const items = [1,2,3,4,5,6,7,8,9]
+var randomItem = items[Math.floor(Math.random()*items.length)];
+
+console.log(randomItem);
+
+console.log("=======================");
+
+//CREATE A FUNCTION TO TAKE RANDOM ITEM AND OBTAIN ITS FACTORIAL
+
+
+//max call stack size exceeded
+// const f = [1,2,3,4,5,6,7,8,9];
+// const n = [1,2,3,4,5,6,7,8,9];
+const f = [];
+
+const randomFactorial = (n) =>{
+
+  if(n == 0  || n == 1)
+    return 1;
+  if(f[n] > 0)
+    return f[n];
+  return f[n] = randomFactorial(n-1) * n;
+  for(n = 1; n <= 9; n++) {
+    n = randomItem[Math.floor(Math.random()*items.length)];
+  }
+  // let  n = [1,2,3,4,5,6,7,8,9]
+  // var randomItem = n[Math.floor(Math.random()*items.length)];
+
+};
+console.log(randomFactorial(randomItem));
+// console.log(randomFactorial(1));
+// console.log(randomFactorial(2));
+// console.log(randomFactorial(3));
+
+// var f = [1,2,3,4,5,6,7,8,9];
+// var f = [];
+// function factorial (n) {
+//   if (n == 0 || n == 1)
+//     return 1;
+//   if (f[n] > 0)
+//     return f[n];
+//   return f[n] = factorial(n-1) * n;
+// };
+// console.log(factorial(f));
+
+console.log("+++++++++++++++++++++++");
+console.log("***********************");
+console.log("=======================");
+const itemsArr = [1,2,3,4,5,6,7,8,9]
+var postFactorial = itemsArr[Math.floor(Math.random()*items.length)];
+
+console.log(postFactorial);
+
+console.log("=======================");
+
+
+const rf = [];
+
+const randomFactorialWorks = (n) =>{
+
+  if(n == 0  || n == 1)
+    return 1;
+  if(rf[n] > 0)
+    return rf[n];
+  return rf[n] = randomFactorialWorks(n-1) * n;
+  for(n = 1; n <= 9; n++) {
+    n = postFactorial[Math.floor(Math.random()*itemsArr.length)];
+  }
+  // let  n = [1,2,3,4,5,6,7,8,9]
+  // var randomItem = n[Math.floor(Math.random()*items.length)];
+
+};
+console.log(randomFactorialWorks(postFactorial));
