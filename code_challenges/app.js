@@ -179,3 +179,47 @@ const randomFactorialWorks = (n) =>{
 
 };
 console.log(randomFactorialWorks(postFactorial));
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//for an application:
+
+// const HelpScoutString = [' '];
+// const firstLetterCapitalize = (HelpScoutString) => {
+//
+//   for(let i = 0; i <= HelpScoutString.length; i++)
+//   if(HelpScoutString[i] === HelpScoutString[0]) {
+//     return HelpScoutString[0].toUpperCase() + HelpScoutString.slice(1);
+//   }
+// }
+// console.log(firstLetterCapitalize("jen will work tirelessly to become an invaluable asset of the Help Scout Team."));
+//
+// console.log(firstLetterCapitalize("this newbie has the drive and fresh perspective to become proficient rapidly."));
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// https://www.hackerrank.com/challenges/grading/problem
+
+// const grades = [];
+//
+// const postGrades = () =>{
+//   for(let i = 0; i <= grades.length; i++)
+//   if(grades[i] < 40) {
+//     return grades[i];
+//   } else if {
+//     // create new place holder variable for grade to be checked for rounding condition
+//     const newGrade = () => {
+//     // if grade is higher than failing
+//     (grades[i] >= 40 &&
+//       // if it is greater than 3 round it up to the next multiple of 5
+//       grades[i] + 2 || 1 === grades[i] % 5 = 0) {
+//       return grades[i] //that has 1 or 2 added to it that make it a multiple of 5
+//
+//       //then return new array ==> newGrade
+//     }
+//   }
+//
+// };
+// console.log(postGrades);
